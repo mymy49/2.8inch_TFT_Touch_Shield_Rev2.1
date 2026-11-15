@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['initialize_0',['initialize',['https://mymy49.github.io/ST7789V/classST7789V__spi__with__Brush__RGB565.html#a47bad7db4f33927d06d953ce8a55bfa4',1,'ST7789V_spi_with_Brush_RGB565::initialize()'],['../classTouch__LCD__Shield__for__Arduino__2__8__inch.html#a524c29fd3b1dc49bdcc3752474476ddd',1,'Touch_LCD_Shield_for_Arduino_2_8_inch::initialize()']]]
+  ['enable_0',['enable',['https://mymy49.github.io/ST7789V/classST7789V.html#af714b5f55554106ed7725540aec2a15e',1,'ST7789V::enable()'],['https://mymy49.github.io/ST7789V/classST7789V__spi__with__Brush__RGB565.html#a4cd77e753231f16cadd64ae61067aab5',1,'ST7789V_spi_with_Brush_RGB565::enable()']]],
+  ['eventsizechanged_1',['eventSizeChanged',['https://mymy49.github.io/TurtleShip/classObject.html#aa0145313e46496f89bda6a3197aa02ad',1,'Object']]]
 ];

@@ -1,13 +1,30 @@
 <map id="Touch_LCD_Shield_for_Arduino_2_8_inch" name="Touch_LCD_Shield_for_Arduino_2_8_inch">
-<area shape="rect" id="Node000001" title="LCD driver for the Waveshare 2.8inch TFT Touch Shield (240 x 320, RGB565, SPI interface)." alt="" coords="46,342,209,387"/>
-<area shape="rect" id="Node000002" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/ST7789V.tag$classST7789V__spi__with__Brush__RGB565.html" title=" " alt="" coords="36,249,219,294"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,308,130,343,125,341,126,312"/>
-<area shape="rect" id="Node000003" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/ST7789V.tag$classST7789V__with__Brush__RGB565.html" title=" " alt="" coords="49,157,206,201"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,214,130,250,125,248,126,219"/>
-<area shape="rect" id="Node000004" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/ST7789V.tag$classST7789V.html" title=" " alt="" coords="16,81,95,109"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="77,118,111,155,106,157,77,123"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="5,5,106,33"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="56,46,58,81,53,80,55,51"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="119,81,280,109"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="176,123,149,158,145,154,180,118"/>
+<area shape="rect" id="Node000001" title="LCD driver for the Waveshare 2.8inch TFT Touch Shield (240 x 320, RGB565, SPI interface)." alt="" coords="76,774,240,818"/>
+<area shape="rect" id="Node000002" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/ST7789V.tag$classST7789V__spi__with__Brush__RGB565.html" title=" " alt="" coords="66,680,250,724"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,738,161,774,156,772,156,742"/>
+<area shape="rect" id="Node000003" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/ST7789V.tag$classST7789V__with__Brush__RGB565.html" title=" " alt="" coords="80,586,237,630"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="159,644,161,680,156,678,157,648"/>
+<area shape="rect" id="Node000004" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/ST7789V.tag$classST7789V.html" title=" " alt="" coords="48,509,127,536"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="108,546,142,584,137,586,108,551"/>
+<area shape="rect" id="Node000005" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classTftLcdDriver.html" title=" " alt="" coords="5,363,106,391"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="62,404,87,508,82,508,61,409"/>
+<area shape="rect" id="Node000006" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classBrushTftLcdRgb565LE.html" title=" " alt="" coords="167,509,328,536"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="221,549,183,587,179,583,224,545"/>
+<area shape="rect" id="Node000007" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classBrushTftLcdRgb565.html" title=" " alt="" coords="84,235,230,262"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="156,275,160,331,171,390,186,425,204,457,239,508,234,508,200,460,181,427,166,392,155,331,155,281"/>
+<area shape="rect" id="Node000008" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classBrush.html" title=" " alt="" coords="146,106,205,134"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="172,147,161,235,156,234,171,152"/>
+<area shape="rect" id="Node000014" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classFrameBuffer.html" title=" " alt="" coords="200,183,301,211"/>
+<area shape="poly" id="edge14_Node000014_Node000008" title=" " alt="" coords="199,142,240,182,235,183,200,147"/>
+<area shape="rect" id="Node000009" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classFont.html" title=" " alt="" coords="151,5,200,33"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="176,46,178,106,173,105,175,51"/>
+<area shape="rect" id="Node000010" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classColorRgb565LE.html" title=" " alt="" coords="370,363,490,391"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="402,403,304,487,270,510,266,506,301,483,406,400"/>
+<area shape="rect" id="Node000011" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classColor.html" title=" " alt="" coords="402,286,458,314"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="431,327,433,364,428,362,429,332"/>
+<area shape="rect" id="Node000012" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classFrameBufferRgb565LE.html" title=" " alt="" coords="181,363,346,391"/>
+<area shape="poly" id="edge11_Node000006_Node000012" title=" " alt="" coords="262,404,252,509,246,507,259,409"/>
+<area shape="rect" id="Node000013" href="/home/runner/work/2.8inch_TFT_Touch_Shield_Rev2.1/2.8inch_TFT_Touch_Shield_Rev2.1/TurtleShip.tag$classFrameBufferRgb565.html" title=" " alt="" coords="183,286,333,314"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="261,327,265,364,260,363,260,332"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="253,223,260,286,255,286,252,229"/>
 </map>

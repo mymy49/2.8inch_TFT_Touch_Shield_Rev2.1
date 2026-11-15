@@ -1,9 +1,14 @@
 var searchData=
 [
-  ['chipselect_0',['chipSelect',['https://mymy49.github.io/ST7789V/structST7789V__spi__with__Brush__RGB565_1_1config__t.html#ab1d0eed86aeff58fa0ff26fc67f7c683',1,'ST7789V_spi_with_Brush_RGB565::config_t']]],
-  ['cmd_5ft_1',['cmd_t',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389',1,'ST7789V']]],
-  ['colmod_2',['COLMOD',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389acefb4913b4628896dbf30241da005ca8',1,'ST7789V']]],
-  ['color_5fset_3',['COLOR_SET',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a006c128b523e2678d17d162bfa5b4014',1,'ST7789V']]],
-  ['column_5faddress_5fset_4',['COLUMN_ADDRESS_SET',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a61d15c862c6ac6139b5891536198b558',1,'ST7789V']]],
-  ['config_5ft_5',['config_t',['https://mymy49.github.io/ST7789V/structST7789V__spi__with__Brush__RGB565_1_1config__t.html',1,'ST7789V_spi_with_Brush_RGB565']]]
+  ['add_0',['add',['https://mymy49.github.io/TurtleShip/classContainer.html#ad165dd1b0b4b646ef9f3fe62f72402ad',1,'Container::add(Object &amp;obj)'],['https://mymy49.github.io/TurtleShip/classContainer.html#a39e45c5522e44818bcba8174fa15b230',1,'Container::add(Object *obj)'],['https://mymy49.github.io/TurtleShip/classFrame.html#abbf3c01a796a6588bea5764f78b30dae',1,'Frame::add(Object &amp;obj)'],['https://mymy49.github.io/TurtleShip/classFrame.html#a1b0d701b0ffd4765975d11327b4c8aab',1,'Frame::add(Object *obj)']]],
+  ['algin_5fleft_5fbot_1',['ALGIN_LEFT_BOT',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164aa228d5aa42e35c51a188f5766ae2090c',1,'Brush']]],
+  ['algin_5fleft_5fmid_2',['ALGIN_LEFT_MID',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164ab61efaf91d6f20a7c11caf742477e4d7',1,'Brush']]],
+  ['algin_5fleft_5ftop_3',['ALGIN_LEFT_TOP',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164ab8e79f592676939c3ce26c21c95ba258',1,'Brush']]],
+  ['align_5fcenter_5fbot_4',['ALIGN_CENTER_BOT',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a50a5ce28edf0621007f39cf5105e007c',1,'Brush']]],
+  ['align_5fcenter_5fmid_5',['ALIGN_CENTER_MID',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140',1,'Brush']]],
+  ['align_5fcenter_5ftop_6',['ALIGN_CENTER_TOP',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a6f1ccdbf3d01aaad972ac524245bc193',1,'Brush']]],
+  ['align_5fright_5fbot_7',['ALIGN_RIGHT_BOT',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164afad28beb64d68f4dc520b708e084c2ab',1,'Brush']]],
+  ['align_5fright_5fmid_8',['ALIGN_RIGHT_MID',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164abbdf7683b0472755a6d290d41fc9e333',1,'Brush']]],
+  ['align_5fright_5ftop_9',['ALIGN_RIGHT_TOP',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3cf372440a1ab31a7ea287615afc7b22',1,'Brush']]],
+  ['align_5ft_10',['align_t',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164',1,'Brush']]]
 ];

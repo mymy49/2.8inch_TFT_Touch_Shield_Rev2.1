@@ -1,8 +1,14 @@
 var searchData=
 [
-  ['set_5fconfig_0',['SET_CONFIG',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a80118fe95208c161551739c5ab1f3905',1,'ST7789V']]],
-  ['set_5ftear_5fscanline_1',['SET_TEAR_SCANLINE',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a7a25d2dd4d4feb05e6e057359243652a',1,'ST7789V']]],
-  ['slpout_2',['SLPOUT',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a86051b2d5815b705ef5aabaca26a07c5',1,'ST7789V']]],
-  ['software_5freset_3',['SOFTWARE_RESET',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389adf6c9af7e4c7610a4395b58408d6f7aa',1,'ST7789V']]],
-  ['spi_4',['spi',['https://mymy49.github.io/ST7789V/structST7789V__spi__with__Brush__RGB565_1_1config__t.html#a33692d48927e4c25b2fd0309b3a12895',1,'ST7789V_spi_with_Brush_RGB565::config_t']]]
+  ['page_5faddress_5fset_0',['PAGE_ADDRESS_SET',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389aeeb486befeaee7c047b264407227c5e1',1,'ST7789V']]],
+  ['partial_5farea_1',['PARTIAL_AREA',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ad650d217cd252fe6cc5083a33a5e7773',1,'ST7789V']]],
+  ['partial_5fmode_5fon_2',['PARTIAL_MODE_ON',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ab5722f1851777d61069a072a7978542d',1,'ST7789V']]],
+  ['porctl_3',['PORCTL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a0087ddee16aba402234d185c1d18279c',1,'ST7789V']]],
+  ['power_5fa_4',['POWER_A',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a55518d4e2459cb1aad032d3c5d8ee8de',1,'ST7789V']]],
+  ['power_5fb_5',['POWER_B',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389adeec7d58a9238a0dbdcad3c5af0af045',1,'ST7789V']]],
+  ['power_5fctrl2_6',['POWER_CTRL2',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ad392726fd56a54f68723dae03a1c01ce',1,'ST7789V']]],
+  ['power_5fseq_7',['POWER_SEQ',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a910a287dfebf013fda3dd2cee349323a',1,'ST7789V']]],
+  ['prc_8',['PRC',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a493e203581671ee00e6f87170320dbfe',1,'ST7789V']]],
+  ['pvgamctrl_9',['PVGAMCTRL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a2951cd3d435c17946b2fe8ba022e4e10',1,'ST7789V']]],
+  ['pwctrl1_10',['PWCTRL1',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ab8986cc855b9323df9985ea26e9d9648',1,'ST7789V']]]
 ];

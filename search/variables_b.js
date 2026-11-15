@@ -1,19 +1,7 @@
 var searchData=
 [
-  ['read_5fcontent_5fadapt_5fbrightness_0',['READ_CONTENT_ADAPT_BRIGHTNESS',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389aa5d84d44f6c35bd582f7d615b92b83bc',1,'ST7789V']]],
-  ['read_5fctrl_5fdisplay_1',['READ_CTRL_DISPLAY',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a19f87d993506f3623f151831b7538641',1,'ST7789V']]],
-  ['read_5fdisp_5fid_2',['READ_DISP_ID',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a6356de7047ef13d40ccd23054df17a0f',1,'ST7789V']]],
-  ['read_5fdisp_5fimage_5fformat_3',['READ_DISP_IMAGE_FORMAT',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a151968a701e1786efd7c99ab3dcf4438',1,'ST7789V']]],
-  ['read_5fdisp_5fmadctrl_4',['READ_DISP_MADCTRL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ab880b3ccca79ca75abbf15f6766c40c8',1,'ST7789V']]],
-  ['read_5fdisp_5fpixel_5fformat_5',['READ_DISP_PIXEL_FORMAT',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a32a9bf3497d1f1924c59b10a79fd2faa',1,'ST7789V']]],
-  ['read_5fdisp_5fself_5fdiagnostic_6',['READ_DISP_SELF_DIAGNOSTIC',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ac5c5ac167c7122a77653041ad6a1f08c',1,'ST7789V']]],
-  ['read_5fdisp_5fsignal_5fmode_7',['READ_DISP_SIGNAL_MODE',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ae397859e1dfffbe6959490a94fba84af',1,'ST7789V']]],
-  ['read_5fdisp_5fstatus_8',['READ_DISP_STATUS',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a280c96e3a146d864859dadc83144548e',1,'ST7789V']]],
-  ['read_5fdisplay_5fbrightness_9',['READ_DISPLAY_BRIGHTNESS',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ad87b19b2876197e0b2dbf0fc95315fed',1,'ST7789V']]],
-  ['read_5fid1_10',['READ_ID1',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a8ed48bedafa7dd7448754eab2866381e',1,'ST7789V']]],
-  ['read_5fid2_11',['READ_ID2',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a0eb70c1df0e8f1ca4ff60dfb2b249aaa',1,'ST7789V']]],
-  ['read_5fid3_12',['READ_ID3',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ad18f403fe1089407cedb66be37f2638c',1,'ST7789V']]],
-  ['read_5fmemory_5fcontinue_13',['READ_MEMORY_CONTINUE',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ab58b90ad6bb70d6df091ccd191eeb54d',1,'ST7789V']]],
-  ['read_5fmin_5fcab_5flevel_14',['READ_MIN_CAB_LEVEL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389afbda7cc11138af9f68ba37660ec02da5',1,'ST7789V']]],
-  ['reset_15',['reset',['https://mymy49.github.io/ST7789V/structST7789V__spi__with__Brush__RGB565_1_1config__t.html#a8c6da2f46d351fcdc473de6ccce873c6',1,'ST7789V_spi_with_Brush_RGB565::config_t']]]
+  ['nop_0',['NOP',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a5e75aa592251c401df16e81b8baafbe1',1,'ST7789V']]],
+  ['normal_5fdisp_5fmode_5fon_1',['NORMAL_DISP_MODE_ON',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389aea498e7b73148e0080bb28da1263276b',1,'ST7789V']]],
+  ['numofchar_2',['numOfChar',['https://mymy49.github.io/TurtleShip/structCodeFont_1_1codeFontInfo__t.html#a28005cd76c1f33e2aedbad4f78141f7d',1,'CodeFont::codeFontInfo_t']]],
+  ['nvgamctrl_3',['NVGAMCTRL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389abab7771bf75c24acae3c4078aad3212b',1,'ST7789V']]]
 ];

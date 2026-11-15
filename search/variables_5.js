@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['gamma3_5ffunc_5fdis_0',['GAMMA3_FUNC_DIS',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389ac5a9683e4b76df62a025ff037ca45566',1,'ST7789V']]],
-  ['gamma_5fset_1',['GAMMA_SET',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a832365ce2d153e04dc40a848885c2b0b',1,'ST7789V']]],
-  ['gate_5fctrl_2',['GATE_CTRL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a9bd2c14611af19301a78740513e4ce05',1,'ST7789V']]],
-  ['get_5fscanline_3',['GET_SCANLINE',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a049242bcc8645f4c0dd0d406f6ab52bc',1,'ST7789V']]]
+  ['fontinfo_0',['fontInfo',['https://mymy49.github.io/TurtleShip/structCodeFont_1_1codeFontInfo__t.html#a000c38b2fae8737f3ac1c38bd54197bd',1,'CodeFont::codeFontInfo_t']]],
+  ['frame_5frate_1',['FRAME_RATE',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a4551341b29bb36ce09d0c746bc8a1d59',1,'ST7789V']]],
+  ['frctrl2_2',['FRCTRL2',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a782b2504f09449e625b26add680eb018',1,'ST7789V']]]
 ];

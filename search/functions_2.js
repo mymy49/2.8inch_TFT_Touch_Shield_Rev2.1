@@ -1,4 +1,10 @@
 var searchData=
 [
-  ['enable_0',['enable',['https://mymy49.github.io/ST7789V/classST7789V.html#af714b5f55554106ed7725540aec2a15e',1,'ST7789V::enable()'],['https://mymy49.github.io/ST7789V/classST7789V__spi__with__Brush__RGB565.html#a4cd77e753231f16cadd64ae61067aab5',1,'ST7789V_spi_with_Brush_RGB565::enable()']]]
+  ['bitmapdrawingcalculator_0',['BitmapDrawingCalculator',['https://mymy49.github.io/TurtleShip/classBitmapDrawingCalculator.html#ae370b2f489e554c0d4b7edae337b6bf4',1,'BitmapDrawingCalculator::BitmapDrawingCalculator(void)'],['https://mymy49.github.io/TurtleShip/classBitmapDrawingCalculator.html#a690430c106467905641fe532d77a4050',1,'BitmapDrawingCalculator::BitmapDrawingCalculator(Size &amp;canvasSize, Area &amp;canvasDesArea, Area &amp;bitmapSrcArea)']]],
+  ['blenddot_1',['blendDot',['https://mymy49.github.io/ST7789V/classST7789V__with__Brush__RGB565.html#a63b8231b50a1c91086b8e70059c5f25a',1,'ST7789V_with_Brush_RGB565::blendDot()'],['https://mymy49.github.io/TurtleShip/classBrush.html#adadee0f1f0b5781bda0142e28c5d5b9b',1,'Brush::blendDot()'],['https://mymy49.github.io/TurtleShip/classFrameBufferRgb565BE.html#a756a2619c468642ec2ea3bfc458ac824',1,'FrameBufferRgb565BE::blendDot()'],['https://mymy49.github.io/TurtleShip/classFrameBufferArgb1555LE.html#a30223f68fb02c11a9e6a93d94d507f1a',1,'FrameBufferArgb1555LE::blendDot()'],['https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html#a74af2d3c7e892fccc84b6e601ae0b367',1,'FrameBufferRgb565LE::blendDot()']]],
+  ['brush_2',['Brush',['https://mymy49.github.io/TurtleShip/classBrush.html#a2e81058b97ce19ef44e5cb3ce71f91c7',1,'Brush']]],
+  ['brushtftlcdrgb565_3',['BrushTftLcdRgb565',['https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565.html#a3118f9f653d566ac9e021582e0a494a3',1,'BrushTftLcdRgb565']]],
+  ['brushtftlcdrgb565be_4',['BrushTftLcdRgb565BE',['https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565BE.html#a76fc58fae6ffec343802124e20bbb1f4',1,'BrushTftLcdRgb565BE']]],
+  ['brushtftlcdrgb565le_5',['BrushTftLcdRgb565LE',['https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a15a40878ae020f727db58d7d5c9dcf75',1,'BrushTftLcdRgb565LE']]],
+  ['button_6',['Button',['https://mymy49.github.io/TurtleShip/classButton.html#acf6709ac6520eba8bbaacca46c489551',1,'Button']]]
 ];

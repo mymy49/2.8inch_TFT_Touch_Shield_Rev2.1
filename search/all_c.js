@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['nop_0',['NOP',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a5e75aa592251c401df16e81b8baafbe1',1,'ST7789V']]],
-  ['normal_5fdisp_5fmode_5fon_1',['NORMAL_DISP_MODE_ON',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389aea498e7b73148e0080bb28da1263276b',1,'ST7789V']]],
-  ['nvgamctrl_2',['NVGAMCTRL',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389abab7771bf75c24acae3c4078aad3212b',1,'ST7789V']]]
+  ['idle_5fmode_5foff_0',['IDLE_MODE_OFF',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a38c6be0914db7d41a39b3048bb64ee52',1,'ST7789V']]],
+  ['idle_5fmode_5fon_1',['IDLE_MODE_ON',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389af275d62704ebbfac9200cb0c3e3806e7',1,'ST7789V']]],
+  ['increaseobjarr_2',['increaseObjArr',['https://mymy49.github.io/TurtleShip/classContainer.html#a28a6dca31e2b047130cd9f687faeb0fa',1,'Container']]],
+  ['initialize_3',['initialize',['https://mymy49.github.io/ST7789V/classST7789V__spi__with__Brush__RGB565.html#a47bad7db4f33927d06d953ce8a55bfa4',1,'ST7789V_spi_with_Brush_RGB565::initialize()'],['../classTouch__LCD__Shield__for__Arduino__2__8__inch.html#a524c29fd3b1dc49bdcc3752474476ddd',1,'Touch_LCD_Shield_for_Arduino_2_8_inch::initialize()']]],
+  ['interface_5fmode_5fcon_4',['INTERFACE_MODE_CON',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389a3bf260bfd735eb13f770b5abae2d9d57',1,'ST7789V']]],
+  ['ismodified_5',['isModified',['https://mymy49.github.io/TurtleShip/classObject.html#ae7498d1db4a8d0d684afc6ef18aa0e2b',1,'Object']]],
+  ['isoutsidecanvas_6',['isOutsideCanvas',['https://mymy49.github.io/TurtleShip/classBrush.html#afd450410c1ca071863ece8fc6ef77ae5',1,'Brush']]],
+  ['isvisible_7',['isVisible',['https://mymy49.github.io/TurtleShip/classObject.html#accfedb81a988463376dc5535ea6eece3',1,'Object']]]
 ];

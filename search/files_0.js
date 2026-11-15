@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['driver_5fst7789v_2ecpp_0',['driver_ST7789V.cpp',['https://mymy49.github.io/ST7789V/driver__ST7789V_8cpp.html',1,'']]],
-  ['driver_5fst7789v_5fspi_5fwith_5fbrush_5frgb565_2ecpp_1',['driver_ST7789V_spi_with_Brush_RGB565.cpp',['https://mymy49.github.io/ST7789V/driver__ST7789V__spi__with__Brush__RGB565_8cpp.html',1,'']]],
-  ['driver_5fst7789v_5fwith_5fbrush_5frgb565_2ecpp_2',['driver_ST7789V_with_Brush_RGB565.cpp',['https://mymy49.github.io/ST7789V/driver__ST7789V__with__Brush__RGB565_8cpp.html',1,'']]]
+  ['bitmapdrawingcalculator_2eh_0',['BitmapDrawingCalculator.h',['https://mymy49.github.io/TurtleShip/BitmapDrawingCalculator_8h.html',1,'']]],
+  ['brush_2eh_1',['Brush.h',['https://mymy49.github.io/TurtleShip/Brush_8h.html',1,'']]],
+  ['brushtftlcdrgb565_2eh_2',['BrushTftLcdRgb565.h',['https://mymy49.github.io/TurtleShip/BrushTftLcdRgb565_8h.html',1,'']]],
+  ['brushtftlcdrgb565be_2eh_3',['BrushTftLcdRgb565BE.h',['https://mymy49.github.io/TurtleShip/BrushTftLcdRgb565BE_8h.html',1,'']]],
+  ['brushtftlcdrgb565le_2eh_4',['BrushTftLcdRgb565LE.h',['https://mymy49.github.io/TurtleShip/BrushTftLcdRgb565LE_8h.html',1,'']]],
+  ['button_2eh_5',['Button.h',['https://mymy49.github.io/TurtleShip/Button_8h.html',1,'']]]
 ];
