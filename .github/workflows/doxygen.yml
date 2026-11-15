@@ -1,0 +1,76 @@
+name: Doxygen API Docs
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Grant write permissions for GitHub Pages deployment
+permissions:
+  contents: write
+
+# Prevent concurrent deployments to the gh-pages branch
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository with nested submodules
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      # 2. Install Doxygen and Graphviz
+      - name: Install Doxygen & Graphviz
+        run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+      # 3. Generate TurtleShip tag file for ST7789V cross-referencing
+      - name: Generate TurtleShip tag file
+        working-directory: ST7789V/TurtleShip
+        run: |
+          (
+            [ -f Doxyfile ] && cat Doxyfile
+            echo "EXTRACT_ALL      = YES"
+            echo "EXCLUDE_PATTERNS = *.md"
+            echo "GENERATE_HTML    = NO"
+            echo "GENERATE_LATEX   = NO"
+            echo "HAVE_DOT         = NO"
+            echo "QUIET            = YES"
+            echo "WARNINGS         = NO"
+            echo "OUTPUT_DIRECTORY = /tmp/TurtleShip_tag"
+            echo "GENERATE_TAGFILE = ../TurtleShip.tag"
+          ) | doxygen -
+
+      # 4. Generate ST7789V tag file for board driver cross-referencing
+      - name: Generate ST7789V tag file
+        working-directory: ST7789V
+        run: |
+          (
+            [ -f Doxyfile ] && cat Doxyfile
+            echo "EXTRACT_ALL      = YES"
+            echo "EXCLUDE_PATTERNS = *.md"
+            echo "GENERATE_HTML    = NO"
+            echo "GENERATE_LATEX   = NO"
+            echo "HAVE_DOT         = NO"
+            echo "QUIET            = YES"
+            echo "WARNINGS         = NO"
+            echo "OUTPUT_DIRECTORY = /tmp/ST7789V_tag"
+            echo "GENERATE_TAGFILE = ../ST7789V.tag"
+          ) | doxygen -
+
+      # 5. Generate documentation using Doxyfile
+      - name: Run Doxygen
+        run: doxygen Doxyfile
+
+      # 6. Deploy generated HTML to gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./html
