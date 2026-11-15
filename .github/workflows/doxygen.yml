@@ -30,7 +30,7 @@ jobs:
       - name: Install Doxygen & Graphviz
         run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
 
-      # 3. Generate TurtleShip tag file for ST7789V cross-referencing
+      # 3. Generate TurtleShip tag file for ST7789V & top-level cross-referencing
       - name: Generate TurtleShip tag file
         working-directory: ST7789V/TurtleShip
         run: |
@@ -46,6 +46,7 @@ jobs:
             echo "OUTPUT_DIRECTORY = /tmp/TurtleShip_tag"
             echo "GENERATE_TAGFILE = ../TurtleShip.tag"
           ) | doxygen -
+          cp ../TurtleShip.tag ../../TurtleShip.tag
 
       # 4. Generate ST7789V tag file for board driver cross-referencing
       - name: Generate ST7789V tag file
