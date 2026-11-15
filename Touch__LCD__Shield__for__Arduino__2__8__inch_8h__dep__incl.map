@@ -1,0 +1,5 @@
+<map id="Touch_LCD_Shield_for_Arduino_2_8_inch.h" name="Touch_LCD_Shield_for_Arduino_2_8_inch.h">
+<area shape="rect" id="Node000001" title="Board&#45;level driver for the Waveshare 2.8inch TFT Touch Shield (Rev 2.1) with an ST7789V LCD controlle..." alt="" coords="21,5,184,50"/>
+<area shape="rect" id="Node000002" href="$module__Touch__LCD__Shield__for__Arduino__2__8__inch_8cpp.html" title="Implementation of the Touch_LCD_Shield_for_Arduino_2_8_inch LCD driver." alt="" coords="5,98,200,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,64,105,99,100,97,101,68"/>
+</map>
