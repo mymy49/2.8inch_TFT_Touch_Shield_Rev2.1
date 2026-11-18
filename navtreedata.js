@@ -25,7 +25,25 @@
 var NAVTREE =
 [
   [ "2.8inch TFT Touch Shield Rev2.1", "index.html", [
-    [ "2.8inch_TFT_Touch_Shield_Rev2.1", "index.html", null ],
+    [ "1. Overview &amp; Key Features", "index.html#autotoc_md2", [
+      [ "Key Highlights", "index.html#autotoc_md3", null ]
+    ] ],
+    [ "2. System Specifications &amp; Hardware Environment", "index.html#autotoc_md5", [
+      [ "Supported Targets &amp; Tools", "index.html#autotoc_md6", null ],
+      [ "Pin Map &amp; Hardware Connections", "index.html#autotoc_md7", null ]
+    ] ],
+    [ "3. Installation &amp; Project Setup", "index.html#autotoc_md9", [
+      [ "Cloning with Nested Submodules", "index.html#autotoc_md10", null ],
+      [ "Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM", "index.html#autotoc_md11", null ],
+      [ "Build and Firmware Flashing", "index.html#autotoc_md12", null ]
+    ] ],
+    [ "4. Quick Start &amp; Example Code", "index.html#autotoc_md14", [
+      [ "1. Hardware Initialization (<span class=\"tt\">bsp.cpp</span>)", "index.html#autotoc_md15", null ],
+      [ "2. Direct On-Screen Vector Drawing", "index.html#autotoc_md16", null ],
+      [ "3. Off-Screen Rendering with Anti-Aliased Typography", "index.html#autotoc_md17", null ]
+    ] ],
+    [ "5. Documentation &amp; References", "index.html#autotoc_md19", null ],
+    [ "6. License &amp; Author", "index.html#autotoc_md21", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Deprecated List", "deprecated.html", null ],

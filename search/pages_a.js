@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['usage_0',['Example Usage',['../classTouch__LCD__Shield__for__Arduino__2__8__inch.html#autotoc_md2',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../deprecated.html',1,'']]],
+  ['direct_20on_20screen_20vector_20drawing_1',['2. Direct On-Screen Vector Drawing',['../index.html#autotoc_md16',1,'']]],
+  ['documentation_20references_2',['5. Documentation &amp;amp; References',['../index.html#autotoc_md19',1,'']]],
+  ['drawing_3',['2. Direct On-Screen Vector Drawing',['../index.html#autotoc_md16',1,'']]]
 ];

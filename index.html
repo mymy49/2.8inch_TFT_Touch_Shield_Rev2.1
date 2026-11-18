@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>2.8inch TFT Touch Shield Rev2.1: 2.8inch_TFT_Touch_Shield_Rev2.1</title>
+<title>2.8inch TFT Touch Shield Rev2.1: 2.8inch TFT Touch Shield Rev2.1</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,10 +96,273 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">2.8inch_TFT_Touch_Shield_Rev2.1 </div></div>
+  <div class="headertitle"><div class="title">2.8inch TFT Touch Shield Rev2.1 </div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a></p>
+<p>[<img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" style="pointer-events: none;" class="inline"/>](LICENSE) <a href="https://github.com/mymy49/2.8inch_TFT_Touch_Shield_Rev2.1/actions"><img src="https://github.com/mymy49/2.8inch_TFT_Touch_Shield_Rev2.1/actions/workflows/doxygen.yml/badge.svg" alt="Doxygen Build" style="pointer-events: none;" class="inline"/></a> <a href="https://mymy49.github.io/2.8inch_TFT_Touch_Shield_Rev2.1/"><img src="https://img.shields.io/badge/docs-API%20Reference-brightgreen.svg" alt="Doxygen API Docs" style="pointer-events: none;" class="inline"/></a></p>
+<p>Board-level driver for the <b>Waveshare 2.8inch TFT Touch Shield (Rev 2.1)</b> with an <b><a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a></b> LCD controller and <b>TurtleShip</b> 2D graphics support for the <b>yss OS</b> embedded framework.</p>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+1. Overview &amp; Key Features</h1>
+<p>The <b>2.8inch_TFT_Touch_Shield_Rev2.1</b> module is a board-level hardware driver designed for Arduino UNO-compatible touch LCD shields featuring a Sitronix <a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a> display controller. It specializes the <a href="https://github.com/mymy49/ST7789V">ST7789V</a> driver with panel-specific initialization, gamma curves, and power sequences, while leveraging the <a href="https://github.com/mymy49/TurtleShip">TurtleShip</a> 2D graphics engine for high-speed rendering.</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Key Highlights</h2>
+<ul>
+<li><b>Shield Hardware Integration (<span class="tt"><a class="el" href="classTouch__LCD__Shield__for__Arduino__2__8__inch.html" title="LCD driver for the Waveshare 2.8inch TFT Touch Shield (240 x 320, RGB565, SPI interface).">Touch_LCD_Shield_for_Arduino_2_8_inch</a></span>)</b>:<ul>
+<li>Full board support for the Waveshare 2.8inch TFT Touch Shield (Rev 2.1) in standard Arduino UNO form factor.</li>
+<li>Native support for the 240x320 RGB565 TFT LCD panel driven by the <a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a> controller.</li>
+<li>Dedicated initialization sequence including software reset, 60 Hz frame rate calibration, gate/VCOM voltage settings, and positive/negative gamma correction.</li>
+</ul>
+</li>
+<li><b>High-Speed Dual-Mode SPI Operation</b>:<ul>
+<li>8-bit transfers for fast command and register parameter configuration (Mode 0, up to 36 MHz).</li>
+<li>16-bit transfers for high-throughput pixel GRAM streaming (Mode 0, up to 36 MHz).</li>
+</ul>
+</li>
+<li><b>RAM-Efficient 2D Graphics Engine</b>:<ul>
+<li>Inherits from <span class="tt"><a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V__spi__with__Brush__RGB565.html">ST7789V_spi_with_Brush_RGB565</a></span> and <span class="tt"><a class="elRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html">BrushTftLcdRgb565LE</a></span>.</li>
+<li>Enables direct vector drawing (lines, circles, rectangles, text, fonts, bitmaps) straight into LCD GRAM without requiring a full 153.6 KB framebuffer in microcontroller SRAM.</li>
+<li>Seamlessly integrates with partial off-screen working framebuffers (<span class="tt">setFrameBuffer()</span>) for flicker-free rendering.</li>
+</ul>
+</li>
+<li><b>Nested Submodule Architecture &amp; Doxygen Cross-Referencing</b>:<ul>
+<li>Directly incorporates <span class="tt"><a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a></span> and nested <span class="tt">TurtleShip</span> submodules.</li>
+<li>Doxygen configuration links external APIs via tag files (<span class="tt">ST7789V.tag</span>, <span class="tt">TurtleShip.tag</span>), providing cross-referenced documentation across the entire graphics stack.</li>
+</ul>
+</li>
+</ul>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+2. System Specifications &amp; Hardware Environment</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Supported Targets &amp; Tools</h2>
+<ul>
+<li><b>Target Microcontrollers &amp; Development Boards</b>:<ul>
+<li>Nuvoton NuMicro® M251 series (e.g., <b>NuMaker-M251KG</b> / Cortex®-M23).</li>
+<li>Any MCU board equipped with Arduino UNO R3-compatible shield headers.</li>
+</ul>
+</li>
+<li><b>Shield Hardware Specifications</b>:<ul>
+<li>Shield Model: <a href="https://www.waveshare.com/2.8inch-TFT-Touch-Shield.htm">Waveshare 2.8inch TFT Touch Shield</a> / <a href="https://www.eleparts.co.kr/goods/view?no=3216739">Eleparts</a></li>
+<li>LCD Controller: Sitronix <a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a> (240 x 320 pixels)</li>
+<li><a class="elRef" href="https://mymy49.github.io/TurtleShip/classColor.html">Color</a> Depth: 16-bit RGB565</li>
+<li>Touch Controller: XPT2046 4-wire resistive touch controller (supported via the companion <a href="https://github.com/mymy49/XPT2046">XPT2046</a> module)</li>
+<li>Storage: Onboard MicroSD card slot</li>
+</ul>
+</li>
+<li><b>Required Software &amp; Toolchains</b>:<ul>
+<li>Toolchain: ARM GNU Toolchain or CrossWorks for ARM (v5.x or higher).<ul>
+<li><b>Note on CrossWorks for ARM</b>: CrossWorks for ARM does not natively support the Nuvoton M251 series. You must install the custom <a href="https://github.com/mymy49/CrossworksForARM_Nuvoton_M251">CrossworksForARM_Nuvoton_M251 Support Package</a> before building M251 projects.</li>
+</ul>
+</li>
+<li>Operating System: <a href="https://github.com/mymy49/yss">yss OS</a> (embedded RTOS &amp; HAL).</li>
+<li>Graphics Engine: <a href="https://github.com/mymy49/TurtleShip">TurtleShip</a> (included as nested submodule).</li>
+<li>Language: C++11 or higher.</li>
+</ul>
+</li>
+</ul>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+Pin Map &amp; Hardware Connections</h2>
+<p>The table below illustrates the pin mappings between the Arduino UNO header on the <b>NuMaker-M251KG</b> and the shield's onboard LCD and Touch controllers:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Arduino Pin  </th><th class="markdownTableHeadLeft">Shield Signal  </th><th class="markdownTableHeadLeft">NuMaker-M251KG Pin  </th><th class="markdownTableHeadLeft">MCU Function / Peripheral  </th><th class="markdownTableHeadLeft">Description  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>D11</b>  </td><td class="markdownTableBodyLeft">MOSI  </td><td class="markdownTableBodyLeft"><span class="tt">PA.0</span>  </td><td class="markdownTableBodyLeft"><span class="tt">Gpio::PA0_SPI0_MOSI</span>  </td><td class="markdownTableBodyLeft">SPI Master Output / Slave Input  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>D12</b>  </td><td class="markdownTableBodyLeft">MISO  </td><td class="markdownTableBodyLeft"><span class="tt">PA.1</span>  </td><td class="markdownTableBodyLeft"><span class="tt">Gpio::PA1_SPI0_MISO</span>  </td><td class="markdownTableBodyLeft">SPI Master Input / Slave Output  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>D13</b>  </td><td class="markdownTableBodyLeft">SCK  </td><td class="markdownTableBodyLeft"><span class="tt">PA.2</span>  </td><td class="markdownTableBodyLeft"><span class="tt">Gpio::PA2_SPI0_CLK</span>  </td><td class="markdownTableBodyLeft">SPI Serial Clock  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>D10</b>  </td><td class="markdownTableBodyLeft">LCD_CS  </td><td class="markdownTableBodyLeft"><span class="tt">PA.3</span>  </td><td class="markdownTableBodyLeft">GPIO Output (Active Low)  </td><td class="markdownTableBodyLeft">LCD Controller Chip Select  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>D9</b>  </td><td class="markdownTableBodyLeft">LCD_BL  </td><td class="markdownTableBodyLeft"><span class="tt">PA.4</span>  </td><td class="markdownTableBodyLeft">GPIO Output (Active High)  </td><td class="markdownTableBodyLeft">Display Backlight Control (High: ON)  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>D8</b>  </td><td class="markdownTableBodyLeft">LCD_DC  </td><td class="markdownTableBodyLeft"><span class="tt">PA.6</span>  </td><td class="markdownTableBodyLeft">GPIO Output (Data/Command)  </td><td class="markdownTableBodyLeft">LCD Command / Data Select (Low: Reg, High: Data)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>D7</b>  </td><td class="markdownTableBodyLeft">TP_CS  </td><td class="markdownTableBodyLeft"><span class="tt">PC.3</span>  </td><td class="markdownTableBodyLeft">GPIO Output (Active Low)  </td><td class="markdownTableBodyLeft">Touch Controller (XPT2046) Chip Select  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>D4</b>  </td><td class="markdownTableBodyLeft">TP_IRQ  </td><td class="markdownTableBodyLeft"><span class="tt">PC.5</span>  </td><td class="markdownTableBodyLeft">GPIO External Interrupt  </td><td class="markdownTableBodyLeft">Touch Interrupt Pin (PENIRQ, Falling Edge)  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>RESET</b>  </td><td class="markdownTableBodyLeft">LCD_RST  </td><td class="markdownTableBodyLeft"><span class="tt">NC</span>  </td><td class="markdownTableBodyLeft">Unused (<span class="tt">{0, 0}</span>)  </td><td class="markdownTableBodyLeft">Hardware Reset (Tied high on shield)  </td></tr>
+</table>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+3. Installation &amp; Project Setup</h1>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+Cloning with Nested Submodules</h2>
+<p>To clone a project containing this shield driver along with all nested submodules (<span class="tt"><a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a></span> and <span class="tt">TurtleShip</span>): </p><div class="fragment"><div class="line">git clone --recursive https://github.com/mymy49/NuMaker-M251KG_example.git</div>
+</div><!-- fragment --><p>To add this repository as a submodule into your project: </p><div class="fragment"><div class="line">git submodule add --recursive https://github.com/mymy49/2.8inch_TFT_Touch_Shield_Rev2.1.git module/2.8inch_TFT_Touch_Shield_Rev2.1</div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM</h2>
+<p>CrossWorks for ARM does not natively provide device support for Nuvoton NuMicro® M251 microcontrollers in its default package manager. A custom device support package must be installed beforehand:</p>
+<ol type="1">
+<li>Clone or download the <a href="https://github.com/mymy49/CrossworksForARM_Nuvoton_M251">CrossworksForARM_Nuvoton_M251</a> repository.</li>
+<li>Open the package project file (<span class="tt">.hzp</span>) in CrossWorks for ARM and build it (<span class="tt">F7</span> or <span class="tt">Build -&gt; Build Project</span>) to generate the package file (<span class="tt">.hzq</span>).</li>
+<li>In CrossWorks for ARM, navigate to <b>Tools -&gt; Packages -&gt; Manually Install Packages...</b> and select the generated <span class="tt">.hzq</span> package file.</li>
+<li>Once installed, M251 target device definitions, CMSIS headers, and project templates will be fully available in CrossWorks for ARM.</li>
+</ol>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+Build and Firmware Flashing</h2>
+<ul>
+<li><b>CrossWorks for ARM</b>:<ol type="1">
+<li>Ensure the <a href="https://github.com/mymy49/CrossworksForARM_Nuvoton_M251">CrossworksForARM_Nuvoton_M251</a> package has been installed.</li>
+<li>Open the project solution file (e.g., <span class="tt">Example.hzp</span>).</li>
+<li>Select target configuration (<span class="tt">Example THUMB Release</span> or <span class="tt">Example THUMB Debug</span>).</li>
+<li>Build solution via <span class="tt">F7</span> or <span class="tt">Build -&gt; Build Solution</span>.</li>
+<li>Connect the board via Nu-Link ICE and flash with <span class="tt">Ctrl+D</span> (<span class="tt">Target -&gt; Download</span>).</li>
+</ol>
+</li>
+<li><b>Command Line (pyOCD / OpenOCD)</b>: <div class="fragment"><div class="line"># Flash prebuilt binary using pyocd</div>
+<div class="line">pyocd flash -t m251kg firmware.bin</div>
+</div><!-- fragment --></li>
+</ul>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md14"></a>
+4. Quick Start &amp; Example Code</h1>
+<p>Below is a complete, real-world example demonstrating how to configure the SPI0 peripheral, initialize the shield driver, and render graphics using both direct drawing and an off-screen brush under yss OS:</p>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md15"></a>
+1. Hardware Initialization (<span class="tt">bsp.cpp</span>)</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;bsp.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;yss/instance.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;module/2.8inch_TFT_Touch_Shield_Rev2.1/Touch_LCD_Shield_for_Arduino_2_8_inch.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="codeRef" href="https://mymy49.github.io/TurtleShip/TurtleShip_8h.html">TurtleShip.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Global display and working brush instances</span></div>
+<div class="line"><a class="code hl_class" href="classTouch__LCD__Shield__for__Arduino__2__8__inch.html">Touch_LCD_Shield_for_Arduino_2_8_inch</a> lcd;</div>
+<div class="line"><a class="code hl_classRef" href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html">FrameBufferRgb565LE</a> brush;</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> initializeBoard(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 1. Configure SPI0 GPIO alternate functions</span></div>
+<div class="line">    gpioA.setAsAltFunc(0, Gpio::PA0_SPI0_MOSI);</div>
+<div class="line">    gpioA.setAsAltFunc(1, Gpio::PA1_SPI0_MISO);</div>
+<div class="line">    gpioA.setAsAltFunc(2, Gpio::PA2_SPI0_CLK);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 2. Initialize SPI0 peripheral in main mode</span></div>
+<div class="line">    Spi::config_t spi0Config = </div>
+<div class="line">    {</div>
+<div class="line">        Spi::MODE_MAIN</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    spi0.enableClock();</div>
+<div class="line">    spi0.initialize(spi0Config);</div>
+<div class="line">    spi0.enableInterrupt();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 3. Configure GPIO control pins (CS, Backlight, DC)</span></div>
+<div class="line">    gpioA.setAsOutput(3); <span class="comment">// CS</span></div>
+<div class="line">    gpioA.setAsOutput(4); <span class="comment">// BL</span></div>
+<div class="line">    gpioA.setAsOutput(6); <span class="comment">// DC</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Turn on LCD backlight</span></div>
+<div class="line">    gpioA.setOutput(4, <span class="keyword">true</span>);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 4. Configure shield LCD driver</span></div>
+<div class="line">    <a class="code hl_structRef" href="https://mymy49.github.io/ST7789V/structST7789V__spi__with__Brush__RGB565_1_1config__t.html">Touch_LCD_Shield_for_Arduino_2_8_inch::config_t</a> lcdConfig =</div>
+<div class="line">    {</div>
+<div class="line">        spi0,           <span class="comment">// Spi &amp;spi;</span></div>
+<div class="line">        {&amp;gpioA, 3},    <span class="comment">// pin_t chipSelect;</span></div>
+<div class="line">        {&amp;gpioA, 6},    <span class="comment">// pin_t dataCommand;</span></div>
+<div class="line">        {0, 0}          <span class="comment">// pin_t reset (unused / tied high);</span></div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 5. Allocate off-screen brush memory and initialize panel</span></div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classFrameBuffer.html#aae707f75c2670ab1094d7770dd1e26f6">malloc</a>(5000);</div>
+<div class="line">    lcd.<a class="code hl_function" href="classTouch__LCD__Shield__for__Arduino__2__8__inch.html#a524c29fd3b1dc49bdcc3752474476ddd">initialize</a>(lcdConfig);</div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a5827822fa1407a3bdb3350ce0b51f003">setFrameBuffer</a>(brush);</div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a31174cd422dddf36ab6f8bbfccf5ffa7">setBackgroundColor</a>({0x00, 0x00, 0x00});</div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#afe383ec89e49ed52a76d6f14b7179169">clear</a>();</div>
+<div class="line">}</div>
+<div class="ttc" id="aTurtleShip_8h_html"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/TurtleShip_8h.html">TurtleShip.h</a></div></div>
+<div class="ttc" id="aclassBrushTftLcdRgb565LE_html_a31174cd422dddf36ab6f8bbfccf5ffa7"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a31174cd422dddf36ab6f8bbfccf5ffa7">BrushTftLcdRgb565LE::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrushTftLcdRgb565LE_html_a5827822fa1407a3bdb3350ce0b51f003"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a5827822fa1407a3bdb3350ce0b51f003">BrushTftLcdRgb565LE::setFrameBuffer</a></div><div class="ttdeci">void setFrameBuffer(FrameBufferRgb565LE &amp;obj) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_afe383ec89e49ed52a76d6f14b7179169"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#afe383ec89e49ed52a76d6f14b7179169">Brush::clear</a></div><div class="ttdeci">void clear() __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html">FrameBufferRgb565LE</a></div></div>
+<div class="ttc" id="aclassFrameBuffer_html_aae707f75c2670ab1094d7770dd1e26f6"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classFrameBuffer.html#aae707f75c2670ab1094d7770dd1e26f6">FrameBuffer::malloc</a></div><div class="ttdeci">void malloc(uint32_t maxPixelPoints)</div></div>
+<div class="ttc" id="aclassTouch__LCD__Shield__for__Arduino__2__8__inch_html"><div class="ttname"><a href="classTouch__LCD__Shield__for__Arduino__2__8__inch.html">Touch_LCD_Shield_for_Arduino_2_8_inch</a></div><div class="ttdoc">LCD driver for the Waveshare 2.8inch TFT Touch Shield (240 x 320, RGB565, SPI interface).</div><div class="ttdef"><b>Definition</b> Touch_LCD_Shield_for_Arduino_2_8_inch.h:66</div></div>
+<div class="ttc" id="aclassTouch__LCD__Shield__for__Arduino__2__8__inch_html_a524c29fd3b1dc49bdcc3752474476ddd"><div class="ttname"><a href="classTouch__LCD__Shield__for__Arduino__2__8__inch.html#a524c29fd3b1dc49bdcc3752474476ddd">Touch_LCD_Shield_for_Arduino_2_8_inch::initialize</a></div><div class="ttdeci">error_t initialize(config_t config) override</div><div class="ttdoc">Initializes the LCD panel with the shield-specific ST7789V register sequence.</div><div class="ttdef"><b>Definition</b> module_Touch_LCD_Shield_for_Arduino_2_8_inch.cpp:66</div></div>
+<div class="ttc" id="astructST7789V__spi__with__Brush__RGB565_1_1config__t_html"><div class="ttname"><a href="https://mymy49.github.io/ST7789V/structST7789V__spi__with__Brush__RGB565_1_1config__t.html">ST7789V_spi_with_Brush_RGB565::config_t</a></div></div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md16"></a>
+2. Direct On-Screen Vector Drawing</h2>
+<p>Because <span class="tt"><a class="el" href="classTouch__LCD__Shield__for__Arduino__2__8__inch.html" title="LCD driver for the Waveshare 2.8inch TFT Touch Shield (240 x 320, RGB565, SPI interface).">Touch_LCD_Shield_for_Arduino_2_8_inch</a></span> inherits <span class="tt"><a class="elRef" href="https://mymy49.github.io/TurtleShip/classBrush.html">Brush</a></span>, graphics can be rendered directly to the screen: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> drawDirectDemo(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    lcd.lock();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Clear background</span></div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a31174cd422dddf36ab6f8bbfccf5ffa7">setBackgroundColor</a>({0x00, 0x00, 0x20});</div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#afe383ec89e49ed52a76d6f14b7179169">clear</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Direct line, circle, and rectangle rendering</span></div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a90cfe369d37ed320d6bac66c5da3bc11">setBrushColor</a>({0xFF, 0x00, 0x00}); <span class="comment">// Red</span></div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#a06c756243de7f586ae84ce0d8aa97a18">drawLine</a>({10, 10}, {230, 10});</div>
+<div class="line"> </div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a90cfe369d37ed320d6bac66c5da3bc11">setBrushColor</a>({0x00, 0xFF, 0x00}); <span class="comment">// Green</span></div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#a77a94a10e1e08156b736decd5e93ba93">drawCircle</a>({120, 160}, 40);</div>
+<div class="line"> </div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a90cfe369d37ed320d6bac66c5da3bc11">setBrushColor</a>({0x00, 0x80, 0xFF}); <span class="comment">// Blue</span></div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#aa4269059863950d85972f8fa7a19961b">fillRectangular</a>({30, 240, 180, 40});</div>
+<div class="line"> </div>
+<div class="line">    lcd.unlock();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassBrushTftLcdRgb565LE_html_a90cfe369d37ed320d6bac66c5da3bc11"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrushTftLcdRgb565LE.html#a90cfe369d37ed320d6bac66c5da3bc11">BrushTftLcdRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_a06c756243de7f586ae84ce0d8aa97a18"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#a06c756243de7f586ae84ce0d8aa97a18">Brush::drawLine</a></div><div class="ttdeci">void drawLine(Position p1, Position p2) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_a77a94a10e1e08156b736decd5e93ba93"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#a77a94a10e1e08156b736decd5e93ba93">Brush::drawCircle</a></div><div class="ttdeci">void drawCircle(Position pos, uint16_t radius) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_aa4269059863950d85972f8fa7a19961b"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#aa4269059863950d85972f8fa7a19961b">Brush::fillRectangular</a></div><div class="ttdeci">void fillRectangular(Area rect) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+</div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="autotoc_md17"></a>
+3. Off-Screen Rendering with Anti-Aliased Typography</h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;font/Ubuntu_20_B.h&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">void</span> drawTextCard(Area area, <span class="keyword">const</span> <span class="keywordtype">char</span> *text)</div>
+<div class="line">{</div>
+<div class="line">    lcd.lock();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Set off-screen buffer size and clear</span></div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classFrameBuffer.html#ade937180952c604eb7f8d090a273fd17">setSize</a>(area);</div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">setBackgroundColor</a>(0x20, 0x20, 0x20);</div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#afe383ec89e49ed52a76d6f14b7179169">clear</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Draw inner border</span></div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">setBrushColor</a>(0x50, 0x50, 0x50);</div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#a878e115c0daa1fdc8e3b4b567d464faa">drawRectangular</a>({1, 1, area.width - 2, area.height - 2});</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Render anti-aliased font</span></div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#a593f710fafede8a24656fa09eb3a0c81">setFont</a>(Font_Ubuntu_20_B);</div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">setBrushColor</a>(0xFF, 0xFF, 0xFF);</div>
+<div class="line">    brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#aa8c55eba9e265eb64ed407ce43bf1c08">drawString</a>(<a class="code hl_variableRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a>, text);</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// Blit rendered off-screen bitmap to the LCD</span></div>
+<div class="line">    lcd.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classBrush.html#a54d60b8ccbe9ced7b63425b249460994">drawBitmap</a>(area.getPosition(), brush.<a class="code hl_functionRef" href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">getBitmap</a>());</div>
+<div class="line"> </div>
+<div class="line">    lcd.unlock();</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassBrush_html_a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140">Brush::ALIGN_CENTER_MID</a></div><div class="ttdeci">ALIGN_CENTER_MID</div></div>
+<div class="ttc" id="aclassBrush_html_a54d60b8ccbe9ced7b63425b249460994"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#a54d60b8ccbe9ced7b63425b249460994">Brush::drawBitmap</a></div><div class="ttdeci">void drawBitmap(Position pos, const bitmap_t bitmap) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_a593f710fafede8a24656fa09eb3a0c81"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#a593f710fafede8a24656fa09eb3a0c81">Brush::setFont</a></div><div class="ttdeci">void setFont(Font &amp;font) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_a878e115c0daa1fdc8e3b4b567d464faa"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#a878e115c0daa1fdc8e3b4b567d464faa">Brush::drawRectangular</a></div><div class="ttdeci">void drawRectangular(Area rect) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassBrush_html_aa8c55eba9e265eb64ed407ce43bf1c08"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classBrush.html#aa8c55eba9e265eb64ed407ce43bf1c08">Brush::drawString</a></div><div class="ttdeci">Position drawString(Position pos, const char *str) __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a1f5e0f873380c5409598ae9b0429613c"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html#a1f5e0f873380c5409598ae9b0429613c">FrameBufferRgb565LE::setBackgroundColor</a></div><div class="ttdeci">void setBackgroundColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565LE_html_a848bdae46ab6422992db348bb8b4cb30"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565LE.html#a848bdae46ab6422992db348bb8b4cb30">FrameBufferRgb565LE::setBrushColor</a></div><div class="ttdeci">void setBrushColor(Color color) override __attribute__((optimize(&quot;-O1&quot;)))</div></div>
+<div class="ttc" id="aclassFrameBufferRgb565_html_a0530a030a12308a12675cc8a4a6cc802"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classFrameBufferRgb565.html#a0530a030a12308a12675cc8a4a6cc802">FrameBufferRgb565::getBitmap</a></div><div class="ttdeci">bitmap_t getBitmap(void) override</div></div>
+<div class="ttc" id="aclassFrameBuffer_html_ade937180952c604eb7f8d090a273fd17"><div class="ttname"><a href="https://mymy49.github.io/TurtleShip/classFrameBuffer.html#ade937180952c604eb7f8d090a273fd17">FrameBuffer::setSize</a></div><div class="ttdeci">bool setSize(Size size)</div></div>
+</div><!-- fragment --><hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+5. Documentation &amp; References</h1>
+<ul>
+<li><b>Doxygen API Reference</b>: <a href="https://mymy49.github.io/2.8inch_TFT_Touch_Shield_Rev2.1/">https://mymy49.github.io/2.8inch_TFT_Touch_Shield_Rev2.1/</a></li>
+<li><b><a class="elRef" href="https://mymy49.github.io/ST7789V/classST7789V.html">ST7789V</a> Submodule Reference</b>: <a href="https://mymy49.github.io/ST7789V/">https://mymy49.github.io/ST7789V/</a></li>
+<li><b>TurtleShip Submodule Reference</b>: <a href="https://mymy49.github.io/TurtleShip/">https://mymy49.github.io/TurtleShip/</a></li>
+<li><b>XPT2046 Touch Driver Reference</b>: <a href="https://mymy49.github.io/XPT2046/">https://mymy49.github.io/XPT2046/</a></li>
+<li><b>Hardware Schematic</b>: <a href="Documents/2.8inch_TFT_Touch_Shield_Schematic_update.pdf">2.8inch TFT Touch Shield Schematic</a></li>
+<li><b>Doxygen Main Page</b>: This <span class="tt"><a class="el" href="README_8md.html">README.md</a></span> file serves as the main page of the generated Doxygen documentation (<span class="tt">USE_MDFILE_AS_MAINPAGE = <a class="el" href="README_8md.html">README.md</a></span>).</li>
+</ul>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+6. License &amp; Author</h1>
+<ul>
+<li><b>Author</b>: Yoon-Ki Hong</li>
+<li><b>License</b>: MIT License. See [LICENSE](LICENSE) for full terms and conditions. </li>
+</ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

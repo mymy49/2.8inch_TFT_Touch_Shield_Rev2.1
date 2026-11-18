@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['enable_0',['enable',['https://mymy49.github.io/ST7789V/classST7789V.html#af714b5f55554106ed7725540aec2a15e',1,'ST7789V::enable()'],['https://mymy49.github.io/ST7789V/classST7789V__spi__with__Brush__RGB565.html#a4cd77e753231f16cadd64ae61067aab5',1,'ST7789V_spi_with_Brush_RGB565::enable()']]],
-  ['enter_5fsleep_5fmode_1',['ENTER_SLEEP_MODE',['https://mymy49.github.io/ST7789V/classST7789V.html#a22940be0c423b5840f41e8b5835b3389af42c79129c50bf582bf9a25a35f185ff',1,'ST7789V']]],
-  ['eventsizechanged_2',['eventSizeChanged',['https://mymy49.github.io/TurtleShip/classObject.html#aa0145313e46496f89bda6a3197aa02ad',1,'Object']]],
-  ['example_20usage_3',['Example Usage',['../classTouch__LCD__Shield__for__Arduino__2__8__inch.html#autotoc_md2',1,'']]]
+  ['add_0',['add',['https://mymy49.github.io/TurtleShip/classContainer.html#ad165dd1b0b4b646ef9f3fe62f72402ad',1,'Container::add(Object &amp;obj)'],['https://mymy49.github.io/TurtleShip/classContainer.html#a39e45c5522e44818bcba8174fa15b230',1,'Container::add(Object *obj)'],['https://mymy49.github.io/TurtleShip/classFrame.html#abbf3c01a796a6588bea5764f78b30dae',1,'Frame::add(Object &amp;obj)'],['https://mymy49.github.io/TurtleShip/classFrame.html#a1b0d701b0ffd4765975d11327b4c8aab',1,'Frame::add(Object *obj)']]],
+  ['algin_5fleft_5fbot_1',['ALGIN_LEFT_BOT',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164aa228d5aa42e35c51a188f5766ae2090c',1,'Brush']]],
+  ['algin_5fleft_5fmid_2',['ALGIN_LEFT_MID',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164ab61efaf91d6f20a7c11caf742477e4d7',1,'Brush']]],
+  ['algin_5fleft_5ftop_3',['ALGIN_LEFT_TOP',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164ab8e79f592676939c3ce26c21c95ba258',1,'Brush']]],
+  ['aliased_20typography_4',['3. Off-Screen Rendering with Anti-Aliased Typography',['../index.html#autotoc_md17',1,'']]],
+  ['align_5fcenter_5fbot_5',['ALIGN_CENTER_BOT',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a50a5ce28edf0621007f39cf5105e007c',1,'Brush']]],
+  ['align_5fcenter_5fmid_6',['ALIGN_CENTER_MID',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3e22461e4127036a71ceb22e62b32140',1,'Brush']]],
+  ['align_5fcenter_5ftop_7',['ALIGN_CENTER_TOP',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a6f1ccdbf3d01aaad972ac524245bc193',1,'Brush']]],
+  ['align_5fright_5fbot_8',['ALIGN_RIGHT_BOT',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164afad28beb64d68f4dc520b708e084c2ab',1,'Brush']]],
+  ['align_5fright_5fmid_9',['ALIGN_RIGHT_MID',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164abbdf7683b0472755a6d290d41fc9e333',1,'Brush']]],
+  ['align_5fright_5ftop_10',['ALIGN_RIGHT_TOP',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164a3cf372440a1ab31a7ea287615afc7b22',1,'Brush']]],
+  ['align_5ft_11',['align_t',['https://mymy49.github.io/TurtleShip/classBrush.html#a352e5dbba45bd0b62832876fcfcf9164',1,'Brush']]],
+  ['and_20firmware_20flashing_12',['Build and Firmware Flashing',['../index.html#autotoc_md12',1,'']]],
+  ['anti_20aliased_20typography_13',['3. Off-Screen Rendering with Anti-Aliased Typography',['../index.html#autotoc_md17',1,'']]],
+  ['arm_14',['Prerequisites: Nuvoton M251 Support Package for CrossWorks for ARM',['../index.html#autotoc_md11',1,'']]],
+  ['author_15',['6. License &amp;amp; Author',['../index.html#autotoc_md21',1,'']]]
 ];

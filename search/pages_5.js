@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['example_20usage_0',['Example Usage',['../classTouch__LCD__Shield__for__Arduino__2__8__inch.html#autotoc_md2',1,'']]]
+  ['6_20license_20author_0',['6. License &amp;amp; Author',['../index.html#autotoc_md21',1,'']]]
 ];
