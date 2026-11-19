@@ -43,7 +43,7 @@ The **2.8inch_TFT_Touch_Shield_Rev2.1** module is a board-level hardware driver 
   - Touch Controller: XPT2046 4-wire resistive touch controller (supported via the companion [XPT2046](https://github.com/mymy49/XPT2046) module)
   - Storage: Onboard MicroSD card slot
 - **Required Software & Toolchains**:
-  - Toolchain: ARM GNU Toolchain or CrossWorks for ARM (v5.x or higher).
+  - Toolchain: CrossWorks for ARM (v5.x or higher).
     - **Note on CrossWorks for ARM**: CrossWorks for ARM does not natively support the Nuvoton M251 series. You must install the custom [CrossworksForARM_Nuvoton_M251 Support Package](https://github.com/mymy49/CrossworksForARM_Nuvoton_M251) before building M251 projects.
   - Operating System: [yss OS](https://github.com/mymy49/yss) (embedded RTOS & HAL).
   - Graphics Engine: [TurtleShip](https://github.com/mymy49/TurtleShip) (included as nested submodule).
