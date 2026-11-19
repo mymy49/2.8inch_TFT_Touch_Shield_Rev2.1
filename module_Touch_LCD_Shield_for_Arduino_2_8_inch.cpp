@@ -8,6 +8,8 @@
 /**
  * @file module_Touch_LCD_Shield_for_Arduino_2_8_inch.cpp
  * @brief Implementation of the Touch_LCD_Shield_for_Arduino_2_8_inch LCD driver.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #include <config.h>
@@ -67,14 +69,18 @@ error_t Touch_LCD_Shield_for_Arduino_2_8_inch::initialize(config_t config)
 {
 	Color color;
 
+	// Store SPI and GPIO pin assignments (CS, DC, RESET)
 	setConfig(config);
 
+	// Apply 36 MHz Mode 0 SPI profiles for 8-bit register and 16-bit pixel transfers
 	setSpiSpecification(gLcdRegSpec, gLcdDataSpec);
 
+	// Pulse hardware reset pin if connected and wait 50 ms for controller power-up
 	reset();
 	
 	thread::delay(50);
 
+	// Lock SPI bus in 8-bit register command mode
 	enable(TYPE_REG);
 
 	uint8_t des;
@@ -130,6 +136,7 @@ error_t Touch_LCD_Shield_for_Arduino_2_8_inch::initialize(config_t config)
 	sendReg(DISPON);
 	thread::delay(50);
 
+	// Release SPI bus lock after initialization sequence completes
 	disable();
 
 	return error_t::ERROR_NONE;
@@ -144,6 +151,7 @@ error_t Touch_LCD_Shield_for_Arduino_2_8_inch::initialize(config_t config)
  */
 Size Touch_LCD_Shield_for_Arduino_2_8_inch::getLcdSize(void)
 {
+	// Return 320x240 in landscape (rotated) mode or 240x320 in portrait mode
 	if(mRotateFlag)
 		return Size{320, 240};
 	else
@@ -160,6 +168,7 @@ Size Touch_LCD_Shield_for_Arduino_2_8_inch::getLcdSize(void)
  */
 Size Touch_LCD_Shield_for_Arduino_2_8_inch::getCanvasSize(void)
 {
+	// Return 320x240 in landscape (rotated) mode or 240x320 in portrait mode
 	if(mRotateFlag)
 		return Size{320, 240};
 	else

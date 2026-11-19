@@ -8,6 +8,8 @@
 /**
  * @file Touch_LCD_Shield_for_Arduino_2_8_inch.h
  * @brief Board-level driver for the Waveshare 2.8inch TFT Touch Shield (Rev 2.1) with an ST7789V LCD controller.
+ * @author Yoon-Ki Hong
+ * @date 2015
  */
 
 #ifndef YSS_MOD_SPI_TFT_LCD_TOUCH_LCD_SHIELD_FOR_ARDUINO_2_8_INCH__H_
@@ -67,6 +69,8 @@ class Touch_LCD_Shield_for_Arduino_2_8_inch : public ST7789V_spi_with_Brush_RGB5
   public:
 	/**
 	 * @brief Constructs a new Touch_LCD_Shield_for_Arduino_2_8_inch object.
+	 * @param[in] none
+	 * @return none
 	 * @author Yoon-Ki Hong
 	 * @date 2015
 	 * @warning None.
@@ -94,6 +98,7 @@ class Touch_LCD_Shield_for_Arduino_2_8_inch : public ST7789V_spi_with_Brush_RGB5
 
 	/**
 	 * @brief Gets the physical resolution of the LCD panel.
+	 * @param[in] none
 	 * @return 240 x 320 in portrait mode, or 320 x 240 when rotated.
 	 * @author Yoon-Ki Hong
 	 * @date 2015
@@ -107,6 +112,7 @@ class Touch_LCD_Shield_for_Arduino_2_8_inch : public ST7789V_spi_with_Brush_RGB5
 
 	/**
 	 * @brief Gets the drawable canvas size of the LCD.
+	 * @param[in] none
 	 * @return 240 x 320 in portrait mode, or 320 x 240 when rotated.
 	 * @author Yoon-Ki Hong
 	 * @date 2015
